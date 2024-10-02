@@ -1,10 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
+import {Routes, Route} from 'react-router-dom'
+import Member from './componetns/Member';
+import NavBar from './componetns/NavBar';
 
 function App() {
   return (
     <div className="App">
-      My first Web application
+      
+      <Routes>
+      <Route exact path="/" element={<NavBar/>}/>
+      <Route exact path="/member" element={<Member/>}/>
+      </Routes>
+      
+      My first Web application   
     </div>
   );
 }
