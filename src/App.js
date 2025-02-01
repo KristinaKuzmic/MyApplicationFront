@@ -9,11 +9,11 @@ function App() {
     <div className="App">
       
       <Routes>
-      <Route exact path="/" element={<NavBar/>}/>
-      <Route exact path="/member" element={<Member/>}/>
+        <Route exact path="/" element={<NavBar/>}/>
+        <Route exact path="/member" element={<Member/>}/>
       </Routes>
       
-      My first Web application   
+         
     </div>
   );
 }
